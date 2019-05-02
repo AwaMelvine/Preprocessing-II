@@ -239,10 +239,17 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+    margin: 0px auto;
+  }
+}
 .home .main-header {
   width: 100%;
 }
 .home .main-header img {
+  display: block;
   width: 100%;
 }
 .home .content-section {
