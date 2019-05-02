@@ -365,12 +365,13 @@ img {
   border-top: 2px dashed #c0c0c0;
 }
 .home .contact form {
-  width: 50%;
+  width: 60%;
   margin: 3rem auto;
   font-size: 1.6rem;
 }
 @media (max-width: 500px) {
   .home .contact form {
+    width: 100%;
     padding: 0.5rem;
   }
 }
@@ -387,13 +388,14 @@ img {
   margin-bottom: 0.4rem;
 }
 .home .contact form div .text-input {
-  font-size: 2rem;
-  padding: 0.9rem 1.2rem;
+  font-size: 1.6rem;
+  padding: 1rem 1.5rem;
   display: block;
   width: 100%;
   outline: none;
   border: 1px solid #c0c0c0;
   border-radius: 0.35rem;
+  color: #212529;
 }
 .home .contact form div .btn {
   font-size: 1.9rem;
