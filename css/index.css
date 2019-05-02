@@ -359,3 +359,52 @@ img {
   border: 1px solid transparent;
   cursor: default;
 }
+.home .contact {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-top: 2px dashed #c0c0c0;
+}
+.home .contact form {
+  width: 50%;
+  margin: 3rem auto;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .home .contact form {
+    padding: 0.5rem;
+  }
+}
+.home .contact form::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.home .contact form div {
+  margin-top: 0.9rem;
+}
+.home .contact form div label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.home .contact form div .text-input {
+  font-size: 2rem;
+  padding: 0.9rem 1.2rem;
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 1px solid #c0c0c0;
+  border-radius: 0.35rem;
+}
+.home .contact form div .btn {
+  font-size: 1.9rem;
+  text-align: center;
+  padding: 0.8em;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  background: #17a2b8;
+  color: #ffffff;
+  border: 1px solid transparent;
+  cursor: default;
+  float: right;
+  width: 100%;
+}

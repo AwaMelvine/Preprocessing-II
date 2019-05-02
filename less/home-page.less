@@ -109,8 +109,54 @@
       }
 
       .btn {
-        .design_buttons(1.6rem);
+        .design_buttons(1.6rem, 0.8em);
       }
     }
   }
+
+  //Contact
+  .contact {
+    padding-top: @largePadding;
+    padding-bottom: @largePadding;
+    border-top: 2px dashed @navigation-border;
+
+    form {
+      width: 50%;
+      margin: @largePadding auto;
+      font-size: 1.6rem;
+
+      @media @mobile {
+        padding: 0.5rem;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      div {
+        margin-top: 0.9rem;
+
+        label {
+          display: block;
+          margin-bottom: 0.4rem;
+        }
+        .text-input {
+          font-size: 2rem;
+          padding: 0.9rem 1.2rem;
+          display: block;
+          width: 100%;
+          outline: none;
+          border: 1px solid @silver;
+          border-radius: 0.35rem;
+        }
+        .btn {
+          .design_buttons(1.9rem, 0.3rem);
+          float: right;
+          width: 100%;
+        }
+      }
+    }
+  } // End Contact
 } // home
