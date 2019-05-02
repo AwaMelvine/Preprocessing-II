@@ -9,22 +9,34 @@
     display: flex;
     justify-content: space-around;
 
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .logo-wrapper {
       width: 40%;
       text-align: left;
+
+      @media @mobile {
+        width: 100%;
+        text-align: center;
+      }
 
       a {
         display: block;
         text-decoration: none;
         color: @font-color;
-
-        padding: 2rem;
+        padding: @mediumPadding;
       }
     }
 
     .nav-menu {
       width: 50%;
       display: flex;
+      @media @mobile {
+        width: 100%;
+      }
 
       li {
         flex: 1;
@@ -38,6 +50,11 @@
           color: @font-color;
           padding-top: @largePadding;
           padding-bottom: @largePadding;
+
+          @media @mobile {
+            padding-top: @smallPadding;
+            padding-bottom: @smallPadding;
+          }
         }
       }
     }
