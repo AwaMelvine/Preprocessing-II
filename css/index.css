@@ -248,6 +248,9 @@ img {
 .home .main-header {
   width: 100%;
 }
+.home .main-header article {
+  margin-top: 3rem;
+}
 .home .main-header img {
   display: block;
   width: 100%;
@@ -262,9 +265,21 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: 0px;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 0px;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
