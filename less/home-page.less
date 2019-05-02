@@ -9,6 +9,7 @@
 
     article {
       margin-top: 3rem;
+      border-bottom: 2px dashed @navigation-border;
     }
 
     img {
@@ -43,6 +44,9 @@
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }

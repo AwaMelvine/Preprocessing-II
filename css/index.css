@@ -250,6 +250,7 @@ img {
 }
 .home .main-header article {
   margin-top: 3rem;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .main-header img {
   display: block;
@@ -283,6 +284,11 @@ img {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
