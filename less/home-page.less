@@ -1,4 +1,27 @@
 .home {
+  @media @mobile {
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .main-header {
+    width: 100%;
+
+    article {
+      margin-top: 3rem;
+      border-bottom: 2px dashed @navigation-border;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+
+      @media @mobile {
+        width: 90%;
+        margin: 0px auto;
+      }
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,19 +29,29 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding-right: 0px;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+        padding-left: 0px;
+      }
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -26,6 +59,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +80,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -52,10 +94,75 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 80%;
+        margin: 0px auto;
+        margin-bottom: 3rem;
+      }
+
+      .btn {
+        .design_buttons(1.6rem, 0.8em);
+      }
     }
   }
-}// home
+
+  //Contact
+  .contact {
+    padding-top: @largePadding;
+    padding-bottom: @largePadding;
+    border-top: 2px dashed @navigation-border;
+
+    form {
+      width: 60%;
+      margin: 3rem auto;
+      font-size: 1.6rem;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0.5rem;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      div {
+        margin-top: 0.9rem;
+
+        label {
+          display: block;
+          margin-bottom: 0.4rem;
+        }
+        .text-input {
+          font-size: 1.6rem;
+<<<<<<< HEAD
+          padding: 1.3rem 1.8rem;
+=======
+          padding: 1rem 1.5rem;
+>>>>>>> 386398d11b428051789e024ceab15d47de2b80fd
+          display: block;
+          width: 100%;
+          outline: none;
+          border: 1px solid @silver;
+          border-radius: 0.35rem;
+          color: @font-color;
+        }
+        .btn {
+          .design_buttons(1.9rem, 0.3rem);
+          float: right;
+          width: 100%;
+        }
+      }
+    }
+  } // End Contact
+} // home
