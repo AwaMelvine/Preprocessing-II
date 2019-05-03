@@ -389,7 +389,11 @@ img {
 }
 .home .contact form div .text-input {
   font-size: 1.6rem;
+<<<<<<< HEAD
   padding: 1.3rem 1.8rem;
+=======
+  padding: 1rem 1.5rem;
+>>>>>>> 386398d11b428051789e024ceab15d47de2b80fd
   display: block;
   width: 100%;
   outline: none;
